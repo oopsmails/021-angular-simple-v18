@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
-import { UserSearchComponent } from './user-search/user-search.component';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [UserSearchComponent],
-  template: `
-    <app-user-search />
-  `,
+  // imports: [RouterOutlet, HomeComponent, UserSearchComponent],
+  imports: [RouterOutlet],
+  templateUrl: "./app.component.html",
 })
-export class AppComponent {}
+export class AppComponent { }
