@@ -30,3 +30,28 @@ There is an eslint rule that helps to avoid the pitfalls I mentioned - https://g
 - toSignal()
 
 00:06:52 - The best way to handle unsubscriptions;
+
+
+
+## Error Log:
+
+### Cannot find /public/*.svg
+
+- This could be a temporary bug from Aangular v18.04
+- Solution:
+
+https://stackoverflow.com/questions/78526073/what-is-the-proper-way-to-reference-assets-in-the-new-angular-18-public-folder
+
+1. ok, but cannot solve favicon.ico
+solution to image in angular 18:
+
+in angular 18 version there is not "assets" folder. if you want to put in your project images, you put the images in the "public" folder and not in the assets folder and you will write in the src of the img the name of the image without any routing.
+
+2. preferred solution:
+
+Me too, I initially had only the /public folder (no /assets folder created by "ng new project-name", Angular CLI 18.0.2), and couldn't load images from /public.
+
+I had to create the "assets" folder myself under "public": /public/assets (and I placed my image here).
+
+Then, `<img src="/assets/test.png">` worked.
+

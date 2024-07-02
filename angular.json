@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "021-angular-simple-v18": {
+    "angular-top-rxjs-mistakes": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "021-angular-simple-v18:build:production"
+              "buildTarget": "angular-top-rxjs-mistakes:build:production"
             },
             "development": {
-              "buildTarget": "021-angular-simple-v18:build:development"
+              "buildTarget": "angular-top-rxjs-mistakes:build:development"
             }
           },
           "defaultConfiguration": "development"
