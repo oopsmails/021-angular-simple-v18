@@ -39,6 +39,19 @@ There is an eslint rule that helps to avoid the pitfalls I mentioned - https://g
 
 The *scan* operator in RxJS (Reactive Extensions for JavaScript) is a powerful tool that allows you to accumulate state over time. It is somewhat analogous to the reduce function in JavaScript arrays but is used within the context of Observables.
 
+## NgRx Signals Store - Is It a NgRx Replacement?
+
+- video: https://www.youtube.com/watch?v=VPyra_5Ko-4
+- Learn NgRx signals store which is a new library from NgRx family. It simplifies working with signals and organizes them in efficient manner introducing new rules to the code.
+
+- Notes: for Angular 18
+
+Use `npm i @ngrx/signals@next`, not `npm install @ngrx/signals --save`, as of 20240703
+
+Will add following in package.json,
+
+`"@ngrx/signals": "^18.0.0-rc.2",`
+
 ## Error Log:
 
 ### Cannot find /public/*.svg
