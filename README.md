@@ -31,7 +31,13 @@ There is an eslint rule that helps to avoid the pitfalls I mentioned - https://g
 
 00:06:52 - The best way to handle unsubscriptions;
 
+## RxJS Scan Operator - How to Manage the State
 
+- video: https://www.youtube.com/watch?v=PDpAjf0688Y
+
+- scan
+
+The *scan* operator in RxJS (Reactive Extensions for JavaScript) is a powerful tool that allows you to accumulate state over time. It is somewhat analogous to the reduce function in JavaScript arrays but is used within the context of Observables.
 
 ## Error Log:
 
