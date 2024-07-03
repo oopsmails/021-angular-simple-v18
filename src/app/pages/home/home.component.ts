@@ -2,7 +2,7 @@ import { AsyncPipe, NgStyle } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { Subject, fromEvent, map, merge, scan } from 'rxjs';
-import { UserSearchComponent } from '../../user-search/user-search.component';
+import { UserSearchComponent } from '../user-search/user-search.component';
 
 @Component({
   selector: 'app-home',
