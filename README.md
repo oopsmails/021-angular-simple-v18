@@ -1,5 +1,49 @@
 # Angular 18 Simple Tests
 
+## Install Tailwind CSS with Angular
+
+- url: https://tailwindcss.com/docs/guides/angular
+
+```
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init
+
+- tailwind.config.js
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/**/*.{html,ts}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+- Add the @tailwind directives for each of Tailwind’s layers to your ./src/styles.css file.
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+- Start using Tailwind in your project
+Start using Tailwind’s utility classes to style your content.
+
+e.g,
+
+<h1 class="text-3xl font-bold underline">
+  Hello world!
+</h1>
+
+
+
+
+
+
+
+```
+
 ## TOP 6 Mistakes in RxJS code
 
 - AngularTopRxjsMistakes
