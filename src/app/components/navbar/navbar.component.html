@@ -1,0 +1,102 @@
+<div class=" fixed w-full">
+    <div>
+        <div class=" flex flex-row justify-between p-5 md:px-32 px-5 bg-white shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+            <div class=" flex flex-row items-center cursor-pointer">
+                <span>
+                    <img class="w-9" src="assets/logo.svg" />
+                </span>
+                <h1 class=" text-xl font-semibold">FoodieWeb</h1>
+            </div>
+
+            <nav class="hidden md:flex flex-row items-center text-lg font-medium gap-8">
+                <a routerLink="/" class="hover:text-brightColor transition-all cursor-pointer">
+                    Home
+                </a>
+
+                <div class="relative group">
+                    <div class=" flex items-center gap-1">
+                        <a routerLink="/posts" class="hover:text-brightColor transition-all cursor-pointer">
+                            Posts
+                        </a>
+
+                        <!-- <BiChevronDown class="cursor-pointer" class="size-16" /> -->
+                    </div>
+
+                    <ul
+                        class="absolute hidden space-y-2 group-hover:block bg-white border border-gray-300 rounded-lg p-5">
+                        <li>
+                            <a routerLink="/posts"
+                                class="text-gray-800 hover:text-brightColor transition-all cursor-pointer">
+                                Spicy
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/posts"
+                                class="text-gray-800 hover:text-brightColor transition-all cursor-pointer">
+                                Tasty
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/posts"
+                                class="text-gray-800 hover:text-brightColor transition-all cursor-pointer">
+                                Delicious
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/posts"
+                                class="text-gray-800 hover:text-brightColor transition-all cursor-pointer">
+                                Crispy
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <a routerLink="/usersearch" class="hover:text-brightColor transition-all cursor-pointer">
+                    User Search
+                </a>
+
+                <a routerLink="/posts" class="hover:text-brightColor transition-all cursor-pointer">
+                    Menu
+                </a>
+
+                <a routerLink="/posts" class="hover:text-brightColor transition-all cursor-pointer">
+                    Reviews
+                </a>
+
+                <button title="Login"></button>
+            </nav>
+
+            <div class="md:hidden flex items-center">
+                @if(menu) {
+                <button class="size-16" onClick=handleChange()></button>
+                } @else {
+                <button class="size-16" onClick=handleChange()></button>
+                }
+            </div>
+        </div>
+        <!-- @if($menu){
+        } -->
+        <div class="translate-x-0 lg:hidden flex flex-col absolute bg-black
+            text-white left-0 top-20 font-semibold text-2xl text-center pt-8 pb-4 gap-8 w-full h-fit
+            transition-transform duration-300">
+            <a routerLink="/" class="hover:text-brightColor transition-all cursor-pointer" onClick=closeMenu()>
+                Home
+            </a>
+            <a routerLink="/posts" class="hover:text-brightColor transition-all cursor-pointer" onClick=closeMenu()>
+                Posts
+            </a>
+            <a routerLink="/usersearch" class="hover:text-brightColor transition-all cursor-pointer"
+                onClick=closeMenu()>
+                User Search
+            </a>
+            <a routerLink="/posts" class="hover:text-brightColor transition-all cursor-pointer" onClick=closeMenu()>
+                Menu
+            </a>
+            <a routerLink="/posts" class=" hover:text-brightColor transition-all cursor-pointer" onClick=closeMenu()>
+                Reviews
+            </a>
+
+            <button title="login">Login</button>
+        </div>
+    </div>
+</div>
