@@ -3,13 +3,13 @@ import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-nav-bar',
+  selector: 'app-navbar2',
   standalone: true,
   imports: [RouterModule, AsyncPipe, NgStyle],
-  templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.scss'
+  templateUrl: './navbar2.component.html',
+  styleUrl: './navbar2.component.scss'
 })
-export class NavBarComponent {
+export class NavBar2Component {
   menu = false;
   setMenu() {
     this.menu = !this.menu;
