@@ -2,12 +2,13 @@ import { AsyncPipe, NgStyle } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { Subject, fromEvent, map, merge, scan } from 'rxjs';
+import { NavBar1Component } from '../../components/navbar1/navbar1.component';
 import { UserSearchComponent } from '../user-search/user-search.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [RouterModule, UserSearchComponent, AsyncPipe, NgStyle],
+  imports: [RouterModule, UserSearchComponent, AsyncPipe, NgStyle, NavBar1Component],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
