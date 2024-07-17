@@ -19,3 +19,14 @@ html,
 body {
   height: 100%;
 }
+
+@layer base {
+  :root {
+    --default-color: 255, 0, 255;
+    --nav-bar-height: 90;
+  }
+
+  #bright-theme {
+    --default-color: 0, 255, 0;
+  }
+}
