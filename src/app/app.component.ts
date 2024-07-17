@@ -8,5 +8,6 @@ import { NavBar2Component } from './components/navbar2/navbar2.component';
   // imports: [RouterOutlet, HomeComponent, UserSearchComponent],
   imports: [RouterOutlet, NavBar2Component],
   templateUrl: "./app.component.html",
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent { }

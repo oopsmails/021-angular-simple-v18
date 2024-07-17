@@ -8,7 +8,8 @@ import { UsersService } from '../../users.service';
   selector: 'app-user-search',
   standalone: true,
   imports: [ReactiveFormsModule, AsyncPipe],
-  templateUrl: './user-search.component.html'
+  templateUrl: './user-search.component.html',
+  styleUrls: ['./user-search.component.scss'],
 })
 export class UserSearchComponent {
   searchConfigForm = new FormGroup({

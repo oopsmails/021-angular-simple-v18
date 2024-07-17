@@ -1,3 +1,30 @@
 :host {
   text-align: center;
 }
+
+input,
+select {
+    display: block;
+    width: 100%;
+    margin: 0px 0 10px 0;
+    box-sizing: border-box;
+    padding: 10px 7px;
+    border: 2px solid #4d5559;
+    border-radius: 7px;
+    font-size: 21px;
+}
+
+select {
+    display: block;
+    width: auto;
+    min-width: 130px;
+}
+
+input {
+    width: 330px;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+}
